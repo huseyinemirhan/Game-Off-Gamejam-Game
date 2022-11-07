@@ -8,6 +8,7 @@ TagManager:
   - Rooms
   - EntryRoom
   - ClosedRoom
+  - Gun
   layers:
   - Default
   - TransparentFX
