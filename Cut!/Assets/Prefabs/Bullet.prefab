@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9175411450062342441}
   - component: {fileID: 3562551463323180651}
-  - component: {fileID: 6154269826932560427}
+  - component: {fileID: 5144354984720377512}
+  - component: {fileID: -836423334011144127}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -45,9 +46,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce24f3c2a87ab3241b888a1546154e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
---- !u!70 &6154269826932560427
-CapsuleCollider2D:
+--- !u!50 &5144354984720377512
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188042104211527899}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &-836423334011144127
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -59,9 +80,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0043942793, y: -0.006778032}
-  m_Size: {x: 0.30372322, y: 0.14835545}
-  m_Direction: 1
+  m_Offset: {x: -0.0017190725, y: 0.0034390688}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.30894074, y: 0.20212221}
+  m_EdgeRadius: 0
 --- !u!1 &6269035603878478353
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,13 +117,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6269035603878478353}
-  m_LocalRotation: {x: 0.011614886, y: 0, z: 0, w: 0.9999325}
+  m_LocalRotation: {x: 0.008515297, y: 0.007898318, z: 0.7070555, w: 0.7070627}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9175411450062342441}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.3310001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.05, y: 1.33, z: 90}
 --- !u!212 &2894857769282003539
 SpriteRenderer:
   m_ObjectHideFlags: 0

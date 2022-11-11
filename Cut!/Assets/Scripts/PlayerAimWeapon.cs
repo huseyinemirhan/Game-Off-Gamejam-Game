@@ -6,10 +6,13 @@ public class PlayerAimWeapon : MonoBehaviour
 {
    private Transform aimTransform;
    public GameObject bulletpf;
-   public GameObject shootP;
+   private Rigidbody2D rb;
+   public Transform shootP;
+   public float bulletSpeed = 100; 
 
    private void Awake() {
     aimTransform = transform.Find("Aim");
+    rb = bulletpf.GetComponent<Rigidbody2D>();
    }
 
    private void Update() {
@@ -29,6 +32,8 @@ public class PlayerAimWeapon : MonoBehaviour
 
    void Shoot()
    {
-    Instantiate(bulletpf,shootP.transform.position,shootP.transform.rotation);
+     GameObject bullet = Instantiate(bulletpf,shootP.position,shootP.rotation);
+     bullet.GetComponent<Rigidbody2D>().AddForce(shootP.up * bulletSpeed, ForceMode2D.Impulse);
+
    }
 }
